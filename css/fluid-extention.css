@@ -186,7 +186,7 @@ blockquote {
 blockquote blockquote {
     padding-right: 0;
 }
-table {
+/* table {
     padding: 0;
     word-break: initial;
     overflow-x: auto;
@@ -221,7 +221,7 @@ table td:first-child {
 table th:last-child,
 table td:last-child {
     margin-bottom: 0;
-}
+} */
 
 .CodeMirror-lines {
     padding-left: 4px;
