@@ -243,7 +243,7 @@
     <link href="/2025/01/06/u%E7%9B%98EFI%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4/"/>
     <url>/2025/01/06/u%E7%9B%98EFI%E5%88%86%E5%8C%BA%E5%88%A0%E9%99%A4/</url>
     
-    <content type="html"><![CDATA[<p>在运行窗口输入 <code>powershell</code> 进入终端，输入 <code>diskpart</code> 并按下 Enter 键</p><p>在弹出的窗口输入 <code>list disk</code> 找到和 u 盘内存相近的磁盘, 我的是 <strong>磁盘 1</strong></p><p>输入 <code>select disk 1</code> 选择磁盘 1</p><p>输入 <code>clean</code> 清空磁盘</p><blockquote><p>这时进入 <strong>计算机管理</strong>, 找到 <strong>磁盘管理</strong>，找到 <strong>磁盘 1</strong>(U 盘)，这时 <u>右击</u>，发现无法创建分区，需要 <u>右击 </u> 左边显示 <em>磁盘 1基本信息的区域</em> 选择 <strong>初始化磁盘</strong>，在弹出来的窗口中选择 <strong>GPT</strong>，确定，就能创建分区了</p></blockquote><blockquote><p><code>Windows+X</code> 再按 <code>K</code> 键就能调出 <strong>磁盘管理</strong> 了</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>在运行窗口输入 <code>powershell</code> 进入终端，输入 <code>diskpart</code> 并按下 Enter 键</p><p>在弹出的窗口输入 <code>list disk</code> 找到和 u 盘内存相近的磁盘, 我的是 <strong>磁盘 1</strong></p><p>输入 <code>select disk 1</code> 选择磁盘 1</p><p>输入 <code>clean</code> 清空磁盘</p><blockquote><p>这时进入 <strong>计算机管理</strong>, 找到 <strong>磁盘管理</strong>，找到 <strong>磁盘 1</strong>(U 盘)，这时 <u>右击</u>，发现无法创建分区，需要 <u>右击</u> 左边显示 <em>磁盘 1基本信息的区域</em> 选择 <strong>初始化磁盘</strong>，在弹出来的窗口中选择 <strong>GPT</strong>，确定，就能创建分区了</p><p><code>Windows+X</code> 再按 <code>K</code> 键就能调出 <strong>磁盘管理</strong> 了</p></blockquote>]]></content>
     
     
     <categories>
@@ -359,11 +359,11 @@
     
     <tags>
       
-      <tag>Windows</tag>
-      
       <tag>Linux</tag>
       
       <tag>Arch</tag>
+      
+      <tag>Windows</tag>
       
       <tag>WSL2</tag>
       
