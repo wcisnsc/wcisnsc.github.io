@@ -19,12 +19,12 @@
   <meta name="author" content="wcisns">
   <meta name="keywords" content="个人博客,blog">
   
-    <meta name="description" content="Windows11使用Wezterm+NuShell+Starship 安装字体JetBrains Mono  Wezterm Wezterm Windows下载地址 Wezterm配置 NuShell NuShell Windows下载地址 使用nu切换盘符: cd 盘符:&#x2F; Starship Starship Windows下载地址 在NuShell里使用starship： 12mkdir">
+    <meta name="description" content="Windows11 使用 Wezterm+NuShell+Starship 安装字体 JetBrains Mono  Wezterm Wezterm Windows 下载地址 Wezterm 配置 NuShell NuShell Windows 下载地址 使用 nu 切换盘符: cd 盘符:&#x2F; Starship Starship Windows 下载地址 在 NuShell 里使用 starsh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NuShell">
 <meta property="og:url" content="https://www.wcisns.top/2025/01/06/nushell/index.html">
 <meta property="og:site_name" content="wcisnsの小破站">
-<meta property="og:description" content="Windows11使用Wezterm+NuShell+Starship 安装字体JetBrains Mono  Wezterm Wezterm Windows下载地址 Wezterm配置 NuShell NuShell Windows下载地址 使用nu切换盘符: cd 盘符:&#x2F; Starship Starship Windows下载地址 在NuShell里使用starship： 12mkdir">
+<meta property="og:description" content="Windows11 使用 Wezterm+NuShell+Starship 安装字体 JetBrains Mono  Wezterm Wezterm Windows 下载地址 Wezterm 配置 NuShell NuShell Windows 下载地址 使用 nu 切换盘符: cd 盘符:&#x2F; Starship Starship Windows 下载地址 在 NuShell 里使用 starsh">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-06T15:29:36.000Z">
 <meta property="article:modified_time" content="2025-01-06T15:29:36.000Z">
@@ -74,6 +74,7 @@
 
   
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/gradient.css">
+<link rel="stylesheet" href="/css/backgroundize.js.css">
 <link rel="stylesheet" href="/css/scrollAnimation.css">
 <link rel="stylesheet" href="/css/fluid-extention.css">
 <link rel="stylesheet" href="/css/top.css">
@@ -361,26 +362,26 @@
               <div class="markdown-body">
                 
                 <blockquote>
-<p>Windows11使用Wezterm+NuShell+Starship</p>
-<p>安装字体<a target="_blank" rel="noopener" href="https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip">JetBrains Mono</a></p>
+<p>Windows11 使用 Wezterm+NuShell+Starship</p>
+<p>安装字体 <a target="_blank" rel="noopener" href="https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip">JetBrains Mono</a></p>
 </blockquote>
 <h2 id="wezterm" tabindex="-1" id="Wezterm">Wezterm</h2>
-<p><a target="_blank" rel="noopener" href="https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-20240203-110809-5046fc22-setup.exe">Wezterm Windows下载地址</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/KevinSilvester/wezterm-config.git">Wezterm配置</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-20240203-110809-5046fc22-setup.exe">Wezterm Windows 下载地址</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/KevinSilvester/wezterm-config.git">Wezterm 配置</a></p>
 <h2 id="nushell" tabindex="-1" id="NuShell">NuShell</h2>
-<p><a target="_blank" rel="noopener" href="https://github.com/nushell/nushell/releases/download/0.98.0/nu-0.98.0-x86_64-pc-windows-msvc.msi">NuShell Windows下载地址</a></p>
-<p>使用nu切换盘符: <code>cd 盘符:/</code></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/nushell/nushell/releases/download/0.98.0/nu-0.98.0-x86_64-pc-windows-msvc.msi">NuShell Windows 下载地址</a></p>
+<p>使用 nu 切换盘符: <code>cd 盘符:/</code></p>
 <h2 id="starship" tabindex="-1" id="Starship">Starship</h2>
-<p><a target="_blank" rel="noopener" href="https://github.com/starship/starship/releases/download/v1.20.1/starship-i686-pc-windows-msvc.msi">Starship Windows下载地址</a></p>
-<p>在NuShell里使用starship：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/starship/starship/releases/download/v1.20.1/starship-i686-pc-windows-msvc.msi">Starship Windows 下载地址</a></p>
+<p>在 NuShell 里使用 starship：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> ~/.cache/starship<br>starship init nu | save -f ~/.cache/starship/init.nu<br></code></pre></td></tr></table></figure>
-<p>在<a target="_blank" rel="noopener" href="https://starship.rs/zh-CN/presets/">Wtarship themes</a>查看主题</p>
-<p>这里使用<a target="_blank" rel="noopener" href="https://starship.rs/zh-CN/presets/pastel-powerline">pastel-powerline</a>主题输入下行代码即可:</p>
+<p>在 <a target="_blank" rel="noopener" href="https://starship.rs/zh-CN/presets/">Wtarship themes</a> 查看主题</p>
+<p>这里使用 <a target="_blank" rel="noopener" href="https://starship.rs/zh-CN/presets/pastel-powerline">pastel-powerline</a> 主题输入下行代码即可:</p>
 <p><code>starship preset pastel-powerline -o ~/.config/starship.toml</code></p>
-<p>添加以下语句后重开一个终端就能出现效果了(使用<code>echo $nu.env-path</code>查看文件路径)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 启动starship</span><br>use ~/.cache/starship/init.nu<br><br><span class="hljs-comment"># 定义别名和目录常量</span><br><span class="hljs-built_in">alias</span> vim = nvim<br></code></pre></td></tr></table></figure>
-<h2 id="wezterm%E5%BF%AB%E6%8D%B7%E9%94%AE" tabindex="-1" id="Wezterm快捷键">Wezterm快捷键</h2>
-<p><a target="_blank" rel="noopener" href="https://github.com/KevinSilvester/wezterm-config.git">Wezterm使用配置</a></p>
+<p>添加以下语句后重开一个终端就能出现效果了 (使用 <code>echo $nu.env-path</code> 查看文件路径)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 启动 starship</span><br>use ~/.cache/starship/init.nu<br><br><span class="hljs-comment"># 定义别名和目录常量</span><br><span class="hljs-built_in">alias</span> vim = nvim<br></code></pre></td></tr></table></figure>
+<h2 id="wezterm-%E5%BF%AB%E6%8D%B7%E9%94%AE" tabindex="-1" id="Wezterm-快捷键">Wezterm 快捷键</h2>
+<p><a target="_blank" rel="noopener" href="https://github.com/KevinSilvester/wezterm-config.git">Wezterm 使用配置</a></p>
 <blockquote>
 <p>super -&gt; Alt</p>
 <p>super_rev -&gt; Ctrl+Alt</p>
@@ -391,7 +392,7 @@
 <code>super+]</code>: 向右查看标签页<br>
 <code>super_rev+]</code>: 向右移动标签页</p>
 <p><code>super+T</code>: 新建一个标签页<br>
-<code>super_rev+T</code>: 新建一个<code>wsl:ubuntu</code>标签页</p>
+<code>super_rev+T</code>: 新建一个 <code>wsl:ubuntu</code> 标签页</p>
 <p><code>super+W</code>: 关闭一个标签页<br>
 <code>super_rev+W</code>: 关闭一个标签页</p>
 <h3 id="%E5%85%89%E6%A0%87%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E7%A7%BB%E5%8A%A8" tabindex="-1" id="光标在命令行中移动">光标在命令行中移动</h3>
@@ -408,7 +409,7 @@
 <code>super+,</code>: 下一张图片<br>
 <code>super+.</code>: 上一张图片<br>
 <code>super_rev+/</code>: 列表选择图片<br>
-<code>super+b</code>: 切换有/无背景图片模式</p>
+<code>super+b</code>: 切换有 / 无背景图片模式</p>
 
                 
               </div>

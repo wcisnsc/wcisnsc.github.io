@@ -19,15 +19,15 @@
   <meta name="author" content="wcisns">
   <meta name="keywords" content="个人博客,blog">
   
-    <meta name="description" content="系统为Arch Linux，桌面为Hyprland 检查是否支持KVM 1egrep &quot;(svm|vmx)&quot; &#x2F;proc&#x2F;cpuinfo 安装Docker、Docker-compose 12345678sudo pacman -S docker # 安装dockersudo systemctl enable docker.service &amp;&amp; \sudo sys">
+    <meta name="description" content="系统为 Arch Linux，桌面为 Hyprland 检查是否支持 KVM 1egrep &quot;(svm|vmx)&quot; &#x2F;proc&#x2F;cpuinfo 安装 Docker、Docker-compose 12345678sudo pacman -S docker # 安装 dockersudo systemctl enable docker.service &amp;&amp; \sud">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Docker安装Windows">
+<meta property="og:title" content="Docker 安装 Windows">
 <meta property="og:url" content="https://www.wcisns.top/2025/01/05/Docker%E5%AE%89%E8%A3%85Windows/index.html">
 <meta property="og:site_name" content="wcisnsの小破站">
-<meta property="og:description" content="系统为Arch Linux，桌面为Hyprland 检查是否支持KVM 1egrep &quot;(svm|vmx)&quot; &#x2F;proc&#x2F;cpuinfo 安装Docker、Docker-compose 12345678sudo pacman -S docker # 安装dockersudo systemctl enable docker.service &amp;&amp; \sudo sys">
+<meta property="og:description" content="系统为 Arch Linux，桌面为 Hyprland 检查是否支持 KVM 1egrep &quot;(svm|vmx)&quot; &#x2F;proc&#x2F;cpuinfo 安装 Docker、Docker-compose 12345678sudo pacman -S docker # 安装 dockersudo systemctl enable docker.service &amp;&amp; \sud">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-05T15:42:30.000Z">
-<meta property="article:modified_time" content="2025-01-13T09:07:35.908Z">
+<meta property="article:modified_time" content="2025-02-07T09:22:06.339Z">
 <meta property="article:author" content="wcisns">
 <meta property="article:tag" content="Docker">
 <meta property="article:tag" content="Windows">
@@ -37,7 +37,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Docker安装Windows - wcisnsの小破站</title>
+  <title>Docker 安装 Windows - wcisnsの小破站</title>
 
   <link  rel="stylesheet" href="https://fastly.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -75,6 +75,7 @@
 
   
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/gradient.css">
+<link rel="stylesheet" href="/css/backgroundize.js.css">
 <link rel="stylesheet" href="/css/scrollAnimation.css">
 <link rel="stylesheet" href="/css/fluid-extention.css">
 <link rel="stylesheet" href="/css/top.css">
@@ -276,7 +277,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Docker安装Windows"></span>
+            <span id="subtitle" data-typed-text="Docker 安装 Windows"></span>
           
         </div>
 
@@ -356,12 +357,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Docker安装Windows</h1>
+            <h1 id="seo-header">Docker 安装 Windows</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年1月13日 下午
+                    本文最后更新于 2025年2月7日 下午
                   
                 
               </p>
@@ -369,19 +370,19 @@
             
               <div class="markdown-body">
                 
-                <p>系统为Arch Linux，桌面为Hyprland</p>
-<h2 id="%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81kvm" tabindex="-1" id="检查是否支持KVM">检查是否支持KVM</h2>
+                <p>系统为 Arch Linux，桌面为 Hyprland</p>
+<h2 id="%E6%A3%80%E6%9F%A5%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81-kvm" tabindex="-1" id="检查是否支持-KVM">检查是否支持 KVM</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">egrep <span class="hljs-string">&quot;(svm|vmx)&quot;</span> /proc/cpuinfo<br></code></pre></td></tr></table></figure>
-<h2 id="%E5%AE%89%E8%A3%85docker%E3%80%81docker-compose" tabindex="-1" id="安装Docker、Docker-compose">安装Docker、Docker-compose</h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> pacman -S docker <span class="hljs-comment"># 安装docker</span><br><span class="hljs-built_in">sudo</span> systemctl <span class="hljs-built_in">enable</span> docker.service &amp;&amp; \<br><span class="hljs-built_in">sudo</span> systemctl start docker.service <span class="hljs-comment"># 开机自启和启动docker</span><br><br><span class="hljs-built_in">sudo</span> usermod -aG docker <span class="hljs-variable">$USER</span> <span class="hljs-comment"># 创建docker用户</span><br><br><span class="hljs-built_in">sudo</span> pacman -S docker-compose <span class="hljs-comment"># 安装docker-compose</span><br><span class="hljs-built_in">sudo</span> pacman -S bash-comletion<br></code></pre></td></tr></table></figure>
-<h2 id="docker%E6%93%8D%E4%BD%9C" tabindex="-1" id="Docker操作">Docker操作</h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker ps -a<br>docker images<br>docker-compose up <span class="hljs-comment"># 启动docker</span><br><span class="hljs-comment">#创建docker-compose.yml文件</span><br>vim ~/docker-compose.yml<br></code></pre></td></tr></table></figure>
-<h2 id="%E5%AE%89%E8%A3%85windows" tabindex="-1" id="安装Windows">安装Windows</h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/dockur/windows.git<br><span class="hljs-built_in">cd</span> windows<br>docker build -t dockurr/windows . <span class="hljs-comment"># 安装windows docker</span><br>docker pull ghcr.io/qemus/qemu-docker:6.11 <span class="hljs-comment"># 挂梯子pull</span><br>paru -S wsdd virtio-win tini nginx<br></code></pre></td></tr></table></figure>
-<p>下载Windows ISO镜像文件创建docker-compose文件，添加以下内容</p>
+<h2 id="%E5%AE%89%E8%A3%85-docker%E3%80%81docker-compose" tabindex="-1" id="安装-Docker、Docker-compose">安装 Docker、Docker-compose</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> pacman -S docker <span class="hljs-comment"># 安装 docker</span><br><span class="hljs-built_in">sudo</span> systemctl <span class="hljs-built_in">enable</span> docker.service &amp;&amp; \<br><span class="hljs-built_in">sudo</span> systemctl start docker.service <span class="hljs-comment"># 开机自启和启动 docker</span><br><br><span class="hljs-built_in">sudo</span> usermod -aG docker <span class="hljs-variable">$USER</span> <span class="hljs-comment"># 创建 docker 用户</span><br><br><span class="hljs-built_in">sudo</span> pacman -S docker-compose <span class="hljs-comment"># 安装 docker-compose</span><br><span class="hljs-built_in">sudo</span> pacman -S bash-comletion<br></code></pre></td></tr></table></figure>
+<h2 id="docker-%E6%93%8D%E4%BD%9C" tabindex="-1" id="Docker-操作">Docker 操作</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker ps -a<br>docker images<br>docker-compose up <span class="hljs-comment"># 启动 docker</span><br><span class="hljs-comment">#创建 docker-compose.yml 文件</span><br>vim ~/docker-compose.yml<br></code></pre></td></tr></table></figure>
+<h2 id="%E5%AE%89%E8%A3%85-windows" tabindex="-1" id="安装-Windows">安装 Windows</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/dockur/windows.git<br><span class="hljs-built_in">cd</span> windows<br>docker build -t dockurr/windows . <span class="hljs-comment"># 安装 windows docker</span><br>docker pull ghcr.io/qemus/qemu-docker:6.11 <span class="hljs-comment"># 挂梯子 pull</span><br>paru -S wsdd virtio-win tini nginx<br></code></pre></td></tr></table></figure>
+<p>下载 Windows ISO 镜像文件创建 docker-compose 文件，添加以下内容</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs bash">version: <span class="hljs-string">&quot;3&quot;</span><br>services:<br>  windows:<br>    image: dockurr/windows<br>    container_name: windows<br>    devices:<br>      - /dev/kvm<br>    cap_add:<br>      - NET_ADMIN<br>    ports:<br>      - 8006:8006<br>      - 3389:3389/tcp<br>      - 3389:3389/udp<br>    stop_grace_period: 2m<br>    restart: on-failure<br>    environment:<br>      VERSION: <span class="hljs-string">&quot;http://winiso/Win10_22H2_Chinese_Simplified_x64v1.iso&quot;</span><br>      MANUAL: <span class="hljs-string">&quot;N&quot;</span><br>    volumes:<br>      - ./win:/storage<br>    depends_on:<br>      - winiso<br><br>  winiso:<br>    image: nginx:alpine<br>    container_name: winiso<br>    restart: on-failure<br>    volumes:<br>      - /home/kingofthunder/ISO:/usr/share/nginx/html<br></code></pre></td></tr></table></figure>
-<p>使用<code>docker compose up</code>启动Windows镜像</p>
-<p>在浏览器输入<code>docker ip:8006</code>即可使用</p>
+<p>使用 <code>docker compose up</code> 启动 Windows 镜像</p>
+<p>在浏览器输入 <code>docker ip:8006</code> 即可使用</p>
 
                 
               </div>
@@ -443,7 +444,7 @@
   </p>
   <!-- <div class="license-box my-3">
     <div class="license-title">
-      <div>Docker安装Windows</div>
+      <div>Docker 安装 Windows</div>
       <div>https://www.wcisns.top/2025/01/05/Docker安装Windows/</div>
     </div>
     <div class="license-meta">
@@ -487,9 +488,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/05/Git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/" title="Git本地远程推送">
+                      <a href="/2025/01/05/Git%E6%9C%AC%E5%9C%B0%E8%BF%9C%E7%A8%8B%E6%8E%A8%E9%80%81/" title="Git 本地远程推送">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Git本地远程推送</span>
+                        <span class="hidden-mobile">Git 本地远程推送</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -497,8 +498,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/01/05/Arch%E3%80%81Hyprland%E5%AE%9E%E4%BD%93%E6%9C%BA%E5%85%A8%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="Arch、Hyprland实体机全安装教程">
-                        <span class="hidden-mobile">Arch、Hyprland实体机全安装教程</span>
+                      <a href="/2025/01/05/Arch%E3%80%81Hyprland%E5%AE%9E%E4%BD%93%E6%9C%BA%E5%85%A8%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="Arch、Hyprland 实体机全安装教程">
+                        <span class="hidden-mobile">Arch、Hyprland 实体机全安装教程</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
