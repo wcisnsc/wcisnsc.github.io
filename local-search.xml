@@ -359,11 +359,11 @@
     
     <tags>
       
-      <tag>Arch</tag>
+      <tag>Windows</tag>
       
       <tag>Linux</tag>
       
-      <tag>Windows</tag>
+      <tag>Arch</tag>
       
       <tag>WSL2</tag>
       
@@ -471,9 +471,9 @@
     
     <tags>
       
-      <tag>Arch</tag>
-      
       <tag>Linux</tag>
+      
+      <tag>Arch</tag>
       
       <tag>Hyprland</tag>
       
