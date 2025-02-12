@@ -1,6 +1,6 @@
 # 个人博客
 
-[**<u>在线预览 | PREVIEW</u>**](https://www.wcisns.top)
+[**<u>在线预览 | PREVIEW</u>**](https://wcisnsc.github.io)
 
 使用 [Hexo](https://hexo.io/zh-cn) 框架，[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)主题
 
