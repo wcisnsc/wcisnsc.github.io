@@ -191,20 +191,6 @@
 
   
   <url>
-    <loc>https://www.wcisns.top/tags/Docker/</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wcisns.top/tags/Windows/</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wcisns.top/tags/Github/</loc>
     <lastmod>2025-02-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -247,6 +233,20 @@
   </url>
   
   <url>
+    <loc>https://www.wcisns.top/tags/Docker/</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wcisns.top/tags/Windows/</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wcisns.top/tags/Git/</loc>
     <lastmod>2025-02-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -261,13 +261,6 @@
   </url>
   
   <url>
-    <loc>https://www.wcisns.top/tags/Powershell7/</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wcisns.top/tags/tar-gz/</loc>
     <lastmod>2025-02-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -276,6 +269,13 @@
   
   <url>
     <loc>https://www.wcisns.top/tags/vscode/</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wcisns.top/tags/Powershell7/</loc>
     <lastmod>2025-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
